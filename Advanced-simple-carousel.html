@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Two stage carousel | Advanced CSS selectors</title>
+    <style>
+        body{ background-color:
+        #234;
+        }
+
+
+        .carousel{
+            width: 610px;
+            
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            box-shadow:0 0 10px 2px #111 ;
+
+
+        }
+        .carousel .slide {
+            width: 1300px;
+            
+            transition: 1s;
+        }
+        .carousel .controls {
+            text-align: center;
+        }
+        .carousel .controls a {
+            color: white;
+            text-decoration: none;
+
+        }
+        .carousel #left:target .slide {
+            transform: translatex(0px);
+        }
+        .carousel #right:target .slide {
+            transform: translatex(-610px);
+        }
+        .left {
+            
+            
+        font-size: 30px;
+        background-color:#234 ;
+        
+    
+    
+        }
+        .left:hover{
+            background-color: #1a1a1a ;
+        }
+    
+    
+
+            
+        
+        .right {
+        
+            
+
+            font-size: 30px;
+            background-color: #234;
+            
+        
+            
+        }
+        .right:hover{
+            background-color:  #1a1a1a;
+        }
+
+        
+
+            
+        
+        
+    </style>
+
+
+</head>
+<body>
+    <div class="carousel">
+        <div id="left">
+            <div id="right">
+                <div class="slide">
+                    <img src="https://i.picsum.photos/id/948/200/300.jpg?hmac=P3pbS5OFe3xlh-_nxsMU3WRWDS5lXF_rBKQZIL_7wPo" alt="">
+                    <img src="https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"alt="">
+                    <img src="https://i.picsum.photos/id/921/200/300.jpg?grayscale&hmac=ed0rBR4KD6xv0iZ6OT8AkLpl_xsd4Usz-Zp1pFIXOTI" alt="">
+                    <img src="https://i.picsum.photos/id/494/200/300.jpg?grayscale&hmac=NSOB7kQOZF5mi1XBTjxDODZ3Cs3CMbLsb0LlWttnotQ" alt="">
+                    <img src="https://i.picsum.photos/id/791/200/300.jpg?grayscale&hmac=BeWMtmO0FemRpbDovWA5h-t58FbjhFvJjotU2VC9Bl0" alt="">
+                    <img src="https://i.picsum.photos/id/520/200/300.jpg?grayscale&hmac=JaJwi5i1XuU_nwqd8jBbaBAFnmcxThF4iwPe8-2YtQk" alt="">
+                </div>
+
+            </div>
+    </div>
+    <div class="controls">
+        <a class="left" href="#left" >⇚</a>
+        <a class="right" href="#right">⇛</a>
+
+    </div>
+
+    </div>
+
+    
+</body>
+</html>
